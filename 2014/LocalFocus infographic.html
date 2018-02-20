@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>LocalFocus infographic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="libraries/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet" type='text/css'>
+	<script type="text/javascript" src="libraries/d3/d3.v3.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="libraries/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="libraries/touch/touch.js"></script>
+
+	<link href="libraries/lfcharts/styles/lfcharts-1.5.1.css" rel="stylesheet" type='text/css'>
+	<script type="text/javascript" src="libraries/lfcharts/lfcharts-1.5.1.js"></script>
+<script type="text/javascript">
+'use strict';
+
+var themodel = {"context":{"maintitle":"AD Oliebollentest 2014 - de top 10","maintext":null,"source":"AD","sourceLink":"http:\/\/AD.nl"},"graphSettings":{"graphType":"charts","curveLines":true,"directLabels":true,"centerLabel":true,"scaleDynamic":true,"scaleZero":true,"sortBar":true,"buckets":null,"autoBuckets":false,"type":"bar","zone":null},"meta":{"types":[{"key":"lfunit","type":"unit","label":"Eenheid"},{"key":"lffilter0","type":"filter","label":"Naam Bakker"},{"key":"lffilter1","type":"filter","label":"Categorie"}],"units":[{"header":"Score","prefix":"","suffix":"","units":"Score"}]},"data":[{"label":"Bakkerij Brokking (IJsselstein)","filter":"lffilter0","element":{"labels":[{"filter":"lfunit","label":"Eenheid","values":["Score"]},{"filter":"lffilter1","label":"Categorie","values":["Eindcijfer","Uiterlijk","Hoeveelheid vulling","Luchtigheid","Klefheid","Smaak","Zoetheid","Vetpercentage","Gemiddeld gewicht (gr)","Prijs per stuk"]}],"values":[{"id":"1","lfunit":"Score","lffilter0":"Bakkerij Brokking (IJsselstein)","lffilter1":"Eindcijfer","lfvalue":"10","value":10},{"id":"2","lfunit":"Score","lffilter0":"Bakkerij Brokking (IJsselstein)","lffilter1":"Uiterlijk","lfvalue":"82.6","value":82.6},{"id":"3","lfunit":"Score","lffilter0":"Bakkerij Brokking (IJsselstein)","lffilter1":"Hoeveelheid vulling","lfvalue":"53.7","value":53.7},{"id":"4","lfunit":"Score","lffilter0":"Bakkerij Brokking (IJsselstein)","lffilter1":"Luchtigheid","lfvalue":"55.8","value":55.8},{"id":"5","lfunit":"Score","lffilter0":"Bakkerij Brokking (IJsselstein)","lffilter1":"Klefheid","lfvalue":"20.8","value":20.8},{"id":"6","lfunit":"Score","lffilter0":"Bakkerij Brokking (IJsselstein)","lffilter1":"Smaak","lfvalue":"63.6","value":63.6},{"id":"7","lfunit":"Score","lffilter0":"Bakkerij Brokking (IJsselstein)","lffilter1":"Zoetheid","lfvalue":"45.7","value":45.7},{"id":"8","lfunit":"Score","lffilter0":"Bakkerij Brokking (IJsselstein)","lffilter1":"Vetpercentage","lfvalue":"13.3","value":13.3},{"id":"9","lfunit":"Score","lffilter0":"Bakkerij Brokking (IJsselstein)","lffilter1":"Gemiddeld gewicht (gr)","lfvalue":"93","value":93},{"id":"10","lfunit":"Score","lffilter0":"Bakkerij Brokking (IJsselstein)","lffilter1":"Prijs per stuk","lfvalue":"0.94","value":0.94}]},"polygon":null,"lonmax":null,"lonmin":null,"latmax":null,"latmin":null,"highlight":false},{"label":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","filter":"lffilter0","element":{"labels":[{"filter":"lfunit","label":"Eenheid","values":["Score"]},{"filter":"lffilter1","label":"Categorie","values":["Eindcijfer","Uiterlijk","Hoeveelheid vulling","Luchtigheid","Klefheid","Smaak","Zoetheid","Vetpercentage","Gemiddeld gewicht (gr)","Prijs per stuk"]}],"values":[{"id":"11","lfunit":"Score","lffilter0":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","lffilter1":"Eindcijfer","lfvalue":"9.5","value":9.5},{"id":"12","lfunit":"Score","lffilter0":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","lffilter1":"Uiterlijk","lfvalue":"81.6","value":81.6},{"id":"13","lfunit":"Score","lffilter0":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","lffilter1":"Hoeveelheid vulling","lfvalue":"41.2","value":41.2},{"id":"14","lfunit":"Score","lffilter0":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","lffilter1":"Luchtigheid","lfvalue":"58.9","value":58.9},{"id":"15","lfunit":"Score","lffilter0":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","lffilter1":"Klefheid","lfvalue":"21.9","value":21.9},{"id":"16","lfunit":"Score","lffilter0":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","lffilter1":"Smaak","lfvalue":"62.9","value":62.9},{"id":"17","lfunit":"Score","lffilter0":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","lffilter1":"Zoetheid","lfvalue":"42.2","value":42.2},{"id":"18","lfunit":"Score","lffilter0":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","lffilter1":"Vetpercentage","lfvalue":"12.2","value":12.2},{"id":"19","lfunit":"Score","lffilter0":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","lffilter1":"Gemiddeld gewicht (gr)","lfvalue":"101","value":101},{"id":"20","lfunit":"Score","lffilter0":"De Verswinkel Ruud &amp; Chantal Gremmee (Rossum)","lffilter1":"Prijs per stuk","lfvalue":"0.85","value":0.85}]},"polygon":null,"lonmax":null,"lonmin":null,"latmax":null,"latmin":null,"highlight":false},{"label":"Gebakkraam Richard Visser (Rotterdam)","filter":"lffilter0","element":{"labels":[{"filter":"lfunit","label":"Eenheid","values":["Score"]},{"filter":"lffilter1","label":"Categorie","values":["Eindcijfer","Uiterlijk","Hoeveelheid vulling","Luchtigheid","Klefheid","Smaak","Zoetheid","Vetpercentage","Gemiddeld gewicht (gr)","Prijs per stuk"]}],"values":[{"id":"21","lfunit":"Score","lffilter0":"Gebakkraam Richard Visser (Rotterdam)","lffilter1":"Eindcijfer","lfvalue":"9.5","value":9.5},{"id":"22","lfunit":"Score","lffilter0":"Gebakkraam Richard Visser (Rotterdam)","lffilter1":"Uiterlijk","lfvalue":"81.3","value":81.3},{"id":"23","lfunit":"Score","lffilter0":"Gebakkraam Richard Visser (Rotterdam)","lffilter1":"Hoeveelheid vulling","lfvalue":"55.3","value":55.3},{"id":"24","lfunit":"Score","lffilter0":"Gebakkraam Richard Visser (Rotterdam)","lffilter1":"Luchtigheid","lfvalue":"57.4","value":57.4},{"id":"25","lfunit":"Score","lffilter0":"Gebakkraam Richard Visser (Rotterdam)","lffilter1":"Klefheid","lfvalue":"21.4","value":21.4},{"id":"26","lfunit":"Score","lffilter0":"Gebakkraam Richard Visser (Rotterdam)","lffilter1":"Smaak","lfvalue":"64.0","value":64},{"id":"27","lfunit":"Score","lffilter0":"Gebakkraam Richard Visser (Rotterdam)","lffilter1":"Zoetheid","lfvalue":"46.3","value":46.3},{"id":"28","lfunit":"Score","lffilter0":"Gebakkraam Richard Visser (Rotterdam)","lffilter1":"Vetpercentage","lfvalue":"13.4","value":13.4},{"id":"29","lfunit":"Score","lffilter0":"Gebakkraam Richard Visser (Rotterdam)","lffilter1":"Gemiddeld gewicht (gr)","lfvalue":"90","value":90},{"id":"30","lfunit":"Score","lffilter0":"Gebakkraam Richard Visser (Rotterdam)","lffilter1":"Prijs per stuk","lfvalue":"1.00","value":1}]},"polygon":null,"lonmax":null,"lonmin":null,"latmax":null,"latmin":null,"highlight":false},{"label":"Bakkerij Olink (Maarssen)","filter":"lffilter0","element":{"labels":[{"filter":"lfunit","label":"Eenheid","values":["Score"]},{"filter":"lffilter1","label":"Categorie","values":["Eindcijfer","Uiterlijk","Hoeveelheid vulling","Luchtigheid","Klefheid","Smaak","Zoetheid","Vetpercentage","Gemiddeld gewicht (gr)","Prijs per stuk"]}],"values":[{"id":"31","lfunit":"Score","lffilter0":"Bakkerij Olink (Maarssen)","lffilter1":"Eindcijfer","lfvalue":"9.5","value":9.5},{"id":"32","lfunit":"Score","lffilter0":"Bakkerij Olink (Maarssen)","lffilter1":"Uiterlijk","lfvalue":"81.7","value":81.7},{"id":"33","lfunit":"Score","lffilter0":"Bakkerij Olink (Maarssen)","lffilter1":"Hoeveelheid vulling","lfvalue":"47.7","value":47.7},{"id":"34","lfunit":"Score","lffilter0":"Bakkerij Olink (Maarssen)","lffilter1":"Luchtigheid","lfvalue":"58.0","value":58},{"id":"35","lfunit":"Score","lffilter0":"Bakkerij Olink (Maarssen)","lffilter1":"Klefheid","lfvalue":"20.8","value":20.8},{"id":"36","lfunit":"Score","lffilter0":"Bakkerij Olink (Maarssen)","lffilter1":"Smaak","lfvalue":"60.0","value":60},{"id":"37","lfunit":"Score","lffilter0":"Bakkerij Olink (Maarssen)","lffilter1":"Zoetheid","lfvalue":"43.5","value":43.5},{"id":"38","lfunit":"Score","lffilter0":"Bakkerij Olink (Maarssen)","lffilter1":"Vetpercentage","lfvalue":"13.6","value":13.6},{"id":"39","lfunit":"Score","lffilter0":"Bakkerij Olink (Maarssen)","lffilter1":"Gemiddeld gewicht (gr)","lfvalue":"110","value":110},{"id":"40","lfunit":"Score","lffilter0":"Bakkerij Olink (Maarssen)","lffilter1":"Prijs per stuk","lfvalue":"1.00","value":1}]},"polygon":null,"lonmax":null,"lonmin":null,"latmax":null,"latmin":null,"highlight":false},{"label":"Meesterbakker Voskamp (Spijkenisse)","filter":"lffilter0","element":{"labels":[{"filter":"lfunit","label":"Eenheid","values":["Score"]},{"filter":"lffilter1","label":"Categorie","values":["Eindcijfer","Uiterlijk","Hoeveelheid vulling","Luchtigheid","Klefheid","Smaak","Zoetheid","Vetpercentage","Gemiddeld gewicht (gr)","Prijs per stuk"]}],"values":[{"id":"41","lfunit":"Score","lffilter0":"Meesterbakker Voskamp (Spijkenisse)","lffilter1":"Eindcijfer","lfvalue":"9","value":9},{"id":"42","lfunit":"Score","lffilter0":"Meesterbakker Voskamp (Spijkenisse)","lffilter1":"Uiterlijk","lfvalue":"81.8","value":81.8},{"id":"43","lfunit":"Score","lffilter0":"Meesterbakker Voskamp (Spijkenisse)","lffilter1":"Hoeveelheid vulling","lfvalue":"50.3","value":50.3},{"id":"44","lfunit":"Score","lffilter0":"Meesterbakker Voskamp (Spijkenisse)","lffilter1":"Luchtigheid","lfvalue":"55.0","value":55},{"id":"45","lfunit":"Score","lffilter0":"Meesterbakker Voskamp (Spijkenisse)","lffilter1":"Klefheid","lfvalue":"22.2","value":22.2},{"id":"46","lfunit":"Score","lffilter0":"Meesterbakker Voskamp (Spijkenisse)","lffilter1":"Smaak","lfvalue":"56.8","value":56.8},{"id":"47","lfunit":"Score","lffilter0":"Meesterbakker Voskamp (Spijkenisse)","lffilter1":"Zoetheid","lfvalue":"41.2","value":41.2},{"id":"48","lfunit":"Score","lffilter0":"Meesterbakker Voskamp (Spijkenisse)","lffilter1":"Vetpercentage","lfvalue":"15.6","value":15.6},{"id":"49","lfunit":"Score","lffilter0":"Meesterbakker Voskamp (Spijkenisse)","lffilter1":"Gemiddeld gewicht (gr)","lfvalue":"96","value":96},{"id":"50","lfunit":"Score","lffilter0":"Meesterbakker Voskamp (Spijkenisse)","lffilter1":"Prijs per stuk","lfvalue":"1.00","value":1}]},"polygon":null,"lonmax":null,"lonmin":null,"latmax":null,"latmin":null,"highlight":false},{"label":"Bakkerij Jongerius (Zoetermeer)","filter":"lffilter0","element":{"labels":[{"filter":"lfunit","label":"Eenheid","values":["Score"]},{"filter":"lffilter1","label":"Categorie","values":["Eindcijfer","Uiterlijk","Hoeveelheid vulling","Luchtigheid","Klefheid","Smaak","Zoetheid","Vetpercentage","Gemiddeld gewicht (gr)","Prijs per stuk"]}],"values":[{"id":"51","lfunit":"Score","lffilter0":"Bakkerij Jongerius (Zoetermeer)","lffilter1":"Eindcijfer","lfvalue":"9","value":9},{"id":"52","lfunit":"Score","lffilter0":"Bakkerij Jongerius (Zoetermeer)","lffilter1":"Uiterlijk","lfvalue":"81.5","value":81.5},{"id":"53","lfunit":"Score","lffilter0":"Bakkerij Jongerius (Zoetermeer)","lffilter1":"Hoeveelheid vulling","lfvalue":"51.0","value":51},{"id":"54","lfunit":"Score","lffilter0":"Bakkerij Jongerius (Zoetermeer)","lffilter1":"Luchtigheid","lfvalue":"50.8","value":50.8},{"id":"55","lfunit":"Score","lffilter0":"Bakkerij Jongerius (Zoetermeer)","lffilter1":"Klefheid","lfvalue":"28.2","value":28.2},{"id":"56","lfunit":"Score","lffilter0":"Bakkerij Jongerius (Zoetermeer)","lffilter1":"Smaak","lfvalue":"64.5","value":64.5},{"id":"57","lfunit":"Score","lffilter0":"Bakkerij Jongerius (Zoetermeer)","lffilter1":"Zoetheid","lfvalue":"44.9","value":44.9},{"id":"58","lfunit":"Score","lffilter0":"Bakkerij Jongerius (Zoetermeer)","lffilter1":"Vetpercentage","lfvalue":"12.3","value":12.3},{"id":"59","lfunit":"Score","lffilter0":"Bakkerij Jongerius (Zoetermeer)","lffilter1":"Gemiddeld gewicht (gr)","lfvalue":"92","value":92},{"id":"60","lfunit":"Score","lffilter0":"Bakkerij Jongerius (Zoetermeer)","lffilter1":"Prijs per stuk","lfvalue":"0.90","value":0.9}]},"polygon":null,"lonmax":null,"lonmin":null,"latmax":null,"latmin":null,"highlight":false},{"label":"Hollandse Gebakkraam Richard Voets (Tilburg)","filter":"lffilter0","element":{"labels":[{"filter":"lfunit","label":"Eenheid","values":["Score"]},{"filter":"lffilter1","label":"Categorie","values":["Eindcijfer","Uiterlijk","Hoeveelheid vulling","Luchtigheid","Klefheid","Smaak","Zoetheid","Vetpercentage","Gemiddeld gewicht (gr)","Prijs per stuk"]}],"values":[{"id":"61","lfunit":"Score","lffilter0":"Hollandse Gebakkraam Richard Voets (Tilburg)","lffilter1":"Eindcijfer","lfvalue":"9","value":9},{"id":"62","lfunit":"Score","lffilter0":"Hollandse Gebakkraam Richard Voets (Tilburg)","lffilter1":"Uiterlijk","lfvalue":"81.8","value":81.8},{"id":"63","lfunit":"Score","lffilter0":"Hollandse Gebakkraam Richard Voets (Tilburg)","lffilter1":"Hoeveelheid vulling","lfvalue":"51.9","value":51.9},{"id":"64","lfunit":"Score","lffilter0":"Hollandse Gebakkraam Richard Voets (Tilburg)","lffilter1":"Luchtigheid","lfvalue":"54.3","value":54.3},{"id":"65","lfunit":"Score","lffilter0":"Hollandse Gebakkraam Richard Voets (Tilburg)","lffilter1":"Klefheid","lfvalue":"17.1","value":17.1},{"id":"66","lfunit":"Score","lffilter0":"Hollandse Gebakkraam Richard Voets (Tilburg)","lffilter1":"Smaak","lfvalue":"60.9","value":60.9},{"id":"67","lfunit":"Score","lffilter0":"Hollandse Gebakkraam Richard Voets (Tilburg)","lffilter1":"Zoetheid","lfvalue":"41.5","value":41.5},{"id":"68","lfunit":"Score","lffilter0":"Hollandse Gebakkraam Richard Voets (Tilburg)","lffilter1":"Vetpercentage","lfvalue":"12.0","value":12},{"id":"69","lfunit":"Score","lffilter0":"Hollandse Gebakkraam Richard Voets (Tilburg)","lffilter1":"Gemiddeld gewicht (gr)","lfvalue":"91","value":91},{"id":"70","lfunit":"Score","lffilter0":"Hollandse Gebakkraam Richard Voets (Tilburg)","lffilter1":"Prijs per stuk","lfvalue":"1.00","value":1}]},"polygon":null,"lonmax":null,"lonmin":null,"latmax":null,"latmin":null,"highlight":false},{"label":"Meesterbakker Uljee (Papendrecht)","filter":"lffilter0","element":{"labels":[{"filter":"lfunit","label":"Eenheid","values":["Score"]},{"filter":"lffilter1","label":"Categorie","values":["Eindcijfer","Uiterlijk","Hoeveelheid vulling","Luchtigheid","Klefheid","Smaak","Zoetheid","Vetpercentage","Gemiddeld gewicht (gr)","Prijs per stuk"]}],"values":[{"id":"71","lfunit":"Score","lffilter0":"Meesterbakker Uljee (Papendrecht)","lffilter1":"Eindcijfer","lfvalue":"8.5","value":8.5},{"id":"72","lfunit":"Score","lffilter0":"Meesterbakker Uljee (Papendrecht)","lffilter1":"Uiterlijk","lfvalue":"79.4","value":79.4},{"id":"73","lfunit":"Score","lffilter0":"Meesterbakker Uljee (Papendrecht)","lffilter1":"Hoeveelheid vulling","lfvalue":"51.0","value":51},{"id":"74","lfunit":"Score","lffilter0":"Meesterbakker Uljee (Papendrecht)","lffilter1":"Luchtigheid","lfvalue":"55.4","value":55.4},{"id":"75","lfunit":"Score","lffilter0":"Meesterbakker Uljee (Papendrecht)","lffilter1":"Klefheid","lfvalue":"23.3","value":23.3},{"id":"76","lfunit":"Score","lffilter0":"Meesterbakker Uljee (Papendrecht)","lffilter1":"Smaak","lfvalue":"60.7","value":60.7},{"id":"77","lfunit":"Score","lffilter0":"Meesterbakker Uljee (Papendrecht)","lffilter1":"Zoetheid","lfvalue":"43.5","value":43.5},{"id":"78","lfunit":"Score","lffilter0":"Meesterbakker Uljee (Papendrecht)","lffilter1":"Vetpercentage","lfvalue":"12.1","value":12.1},{"id":"79","lfunit":"Score","lffilter0":"Meesterbakker Uljee (Papendrecht)","lffilter1":"Gemiddeld gewicht (gr)","lfvalue":"95","value":95},{"id":"80","lfunit":"Score","lffilter0":"Meesterbakker Uljee (Papendrecht)","lffilter1":"Prijs per stuk","lfvalue":"1.00","value":1}]},"polygon":null,"lonmax":null,"lonmin":null,"latmax":null,"latmin":null,"highlight":false},{"label":"Bakker Sturkenboom (Kortenhoef)","filter":"lffilter0","element":{"labels":[{"filter":"lfunit","label":"Eenheid","values":["Score"]},{"filter":"lffilter1","label":"Categorie","values":["Eindcijfer","Uiterlijk","Hoeveelheid vulling","Luchtigheid","Klefheid","Smaak","Zoetheid","Vetpercentage","Gemiddeld gewicht (gr)","Prijs per stuk"]}],"values":[{"id":"81","lfunit":"Score","lffilter0":"Bakker Sturkenboom (Kortenhoef)","lffilter1":"Eindcijfer","lfvalue":"8.5","value":8.5},{"id":"82","lfunit":"Score","lffilter0":"Bakker Sturkenboom (Kortenhoef)","lffilter1":"Uiterlijk","lfvalue":"80.4","value":80.4},{"id":"83","lfunit":"Score","lffilter0":"Bakker Sturkenboom (Kortenhoef)","lffilter1":"Hoeveelheid vulling","lfvalue":"37.3","value":37.3},{"id":"84","lfunit":"Score","lffilter0":"Bakker Sturkenboom (Kortenhoef)","lffilter1":"Luchtigheid","lfvalue":"51.4","value":51.4},{"id":"85","lfunit":"Score","lffilter0":"Bakker Sturkenboom (Kortenhoef)","lffilter1":"Klefheid","lfvalue":"26.7","value":26.7},{"id":"86","lfunit":"Score","lffilter0":"Bakker Sturkenboom (Kortenhoef)","lffilter1":"Smaak","lfvalue":"59.9","value":59.9},{"id":"87","lfunit":"Score","lffilter0":"Bakker Sturkenboom (Kortenhoef)","lffilter1":"Zoetheid","lfvalue":"42.3","value":42.3},{"id":"88","lfunit":"Score","lffilter0":"Bakker Sturkenboom (Kortenhoef)","lffilter1":"Vetpercentage","lfvalue":"12.3","value":12.3},{"id":"89","lfunit":"Score","lffilter0":"Bakker Sturkenboom (Kortenhoef)","lffilter1":"Gemiddeld gewicht (gr)","lfvalue":"93","value":93},{"id":"90","lfunit":"Score","lffilter0":"Bakker Sturkenboom (Kortenhoef)","lffilter1":"Prijs per stuk","lfvalue":"0.95","value":0.95}]},"polygon":null,"lonmax":null,"lonmin":null,"latmax":null,"latmin":null,"highlight":false},{"label":"Bakkerij Holtkamp (Schipluiden)","filter":"lffilter0","element":{"labels":[{"filter":"lfunit","label":"Eenheid","values":["Score"]},{"filter":"lffilter1","label":"Categorie","values":["Eindcijfer","Uiterlijk","Hoeveelheid vulling","Luchtigheid","Klefheid","Smaak","Zoetheid","Vetpercentage","Gemiddeld gewicht (gr)","Prijs per stuk"]}],"values":[{"id":"91","lfunit":"Score","lffilter0":"Bakkerij Holtkamp (Schipluiden)","lffilter1":"Eindcijfer","lfvalue":"8.5","value":8.5},{"id":"92","lfunit":"Score","lffilter0":"Bakkerij Holtkamp (Schipluiden)","lffilter1":"Uiterlijk","lfvalue":"75.6","value":75.6},{"id":"93","lfunit":"Score","lffilter0":"Bakkerij Holtkamp (Schipluiden)","lffilter1":"Hoeveelheid vulling","lfvalue":"51.3","value":51.3},{"id":"94","lfunit":"Score","lffilter0":"Bakkerij Holtkamp (Schipluiden)","lffilter1":"Luchtigheid","lfvalue":"55.5","value":55.5},{"id":"95","lfunit":"Score","lffilter0":"Bakkerij Holtkamp (Schipluiden)","lffilter1":"Klefheid","lfvalue":"32.0","value":32},{"id":"96","lfunit":"Score","lffilter0":"Bakkerij Holtkamp (Schipluiden)","lffilter1":"Smaak","lfvalue":"63.5","value":63.5},{"id":"97","lfunit":"Score","lffilter0":"Bakkerij Holtkamp (Schipluiden)","lffilter1":"Zoetheid","lfvalue":"46.4","value":46.4},{"id":"98","lfunit":"Score","lffilter0":"Bakkerij Holtkamp (Schipluiden)","lffilter1":"Vetpercentage","lfvalue":"10.9","value":10.9},{"id":"99","lfunit":"Score","lffilter0":"Bakkerij Holtkamp (Schipluiden)","lffilter1":"Gemiddeld gewicht (gr)","lfvalue":"90","value":90},{"id":"100","lfunit":"Score","lffilter0":"Bakkerij Holtkamp (Schipluiden)","lffilter1":"Prijs per stuk","lfvalue":"0.90","value":0.9}]},"polygon":null,"lonmax":null,"lonmin":null,"latmax":null,"latmin":null,"highlight":false}]};
+
+$(function(){
+
+	var supportsSvg = function() {
+	    return window.SVGAngle || document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Shape", "1.1");
+	}
+
+	if(!supportsSvg()){
+        var screenshotDimension = ($(window).width() > $(window).height())?'w':'h';
+		$('#placeholder > img').attr('src','http://screenshots.localfocus.nl/images/154994b34645f8-'+screenshotDimension+'.png').attr('alt','Uw browser ondersteunt interactieve infographics van LocalFocus niet.');
+		$('#placeholder > p').text('Uw browser ondersteunt interactieve infographics van LocalFocus niet. Daarom wordt een afbeelding getoond.');		
+		return;	
+	}
+
+	$('#placeholder').hide();
+	$('#frame').show();
+
+	if(themodel.context.maintitle){
+		$("#top > .title").html(themodel.context.maintitle);
+	} else {
+		$("#top > .title").hide();
+	}
+
+	if(themodel.context.maintext){
+		$("#top > .text").html(themodel.context.maintext);
+	} else {
+		$("#top > .text").hide();
+	}
+
+	if(themodel.context.source){
+		$("#bottom > .source > a").attr("href",themodel.context.sourceLink).text("Bron: "+themodel.context.source);
+	} else {
+		$("#bottom > .source > a").css("visibility","hidden");
+	}
+
+	var totalHeight = $(window).outerHeight();
+	var textHeight = $("#top").outerHeight(true) + $("#bottom").outerHeight(true);
+
+	$(".infographic").height(totalHeight-textHeight);
+
+    var loadGoogleMaps = function(){
+    	var script = document.createElement('script');
+    	script.type = 'text/javascript';
+    	script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initializeInfographic';
+    	document.body.appendChild(script);
+    }
+
+    if(themodel.graphSettings.graphType === 'maps'){
+    	loadGoogleMaps();
+    } else {
+    	initializeInfographic();
+    }
+});
+
+var initializeInfographic = function(){
+    var chart = new lfcharts({
+        "colors": ["#CC0000", "#f37021", "#0091c0", "#b01c8a"],
+        "mapColorsZero":"#CBCCCE",
+        "mapColorsUnknown":"#E1DFE1",
+        "mapColors": [
+    {negColors:[],posColors:[]},
+    {negColors:['#DB4140'],posColors:['#009BDB']},
+    {negColors:['#DB4140','#F89E5D'],posColors:['#A1C1E6','#009BDB']},
+    {negColors:['#DB4140','#F89E5D','#FFCE7B'],posColors:['#B8CCEA','#6BB0E1','#0089CF']},
+    {negColors:['#C0264B','#E66042','#F89E5D','#FFCE7B'],posColors:['#B8CCEA','#6BB0E1','#009BDB','#0073AE']},
+    {negColors:['#C0264B','#E66042','#F89E5D','#FCBB6D','#FFD990'],posColors:['#CCD4EC','#A1C1E6','#6BB0E1','#009BDB','#0073AE']},
+    {negColors:['#B7274C','#DB4140','#F3704B','#F89E5D','#FCBB6D','#FFD990'],posColors:['#CCD4EC','#A1C1E6','#6BB0E1','#009EDB','#0089CF','#00689E']},
+    {negColors:['#C0264B','#DB4140','#F3704B','#F89E5D','#FCBB6D','#FFD990','#FFEAB1'],posColors:['#CCD4EC','#A1C1E6','#6BB0E1','#009EDB','#0089CF','#00689E','#083858']}
+    ]
+    });
+	chart.updateData(themodel);
+}
+
+</script>
+
+<style type="text/css">
+
+html{
+	width:100%;
+}
+
+body {
+	width:100%;
+	margin:0px;
+	padding:0px;
+	font-family: 'Arial Narrow', Arial, Helvetica, 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+	background-color:#FFF;
+	font-weight: 300;
+	font-style: normal;
+	font-variant: normal;
+	
+	overflow:hidden;
+}
+
+p {
+	margin:0px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0px;
+}
+
+h2.title {
+    font-family: 'Arial Narrow', Arial, Helvetica, 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    padding:0px 0px 16px 0px;
+}
+
+p.text {
+    padding:0px 0px 16px 0px;
+    line-height: 1.5em;
+}
+
+a {
+	text-decoration:none;
+	color:#069;
+}
+
+#frame {
+	display: none;
+}
+
+#bottom:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#placeholder {
+    text-align:center;  
+}
+
+#placeholder img {
+    width:inherit;
+    height:inherit;
+    max-width:90%;
+    max-height:90%;
+}
+
+#placeholder p {
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:0.8em;    
+}
+
+.infographic {
+    font-size: 14px;
+}
+
+</style>
+</head>
+<body>
+	<div id="placeholder">
+		<p>Uw browser ondersteunt interactieve infographics van LocalFocus niet. Daarom wordt een afbeelding getoond.</p>
+		<img src="public/general/default.jpg" alt="Uw browser ondersteunt interactieve infographics van LocalFocus niet." />
+	</div>
+	<div id="frame">
+		<div id="top">
+			<h2 class="title"></h2>
+			<p class="text"></p>
+		</div>
+		<div class="infographic"></div>
+		<div id="bottom">
+			<div style="float:left;color:#CCC">Gemaakt met <a style="color:#CCC" href="http://www.localfocus.nl/" target="_blank">LocalFocus</a></div>
+			<div class="source" style="float:right"><a href="#" target="_blank"></a></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-42398231-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+</body>
+</html>
